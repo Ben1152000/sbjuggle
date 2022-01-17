@@ -1,0 +1,6 @@
+<!-- Navigation panel on the left side of the page. -->
+<div class="panel">
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}">{{ item.name }}</a><br><br>
+  {% endfor %}
+</div>

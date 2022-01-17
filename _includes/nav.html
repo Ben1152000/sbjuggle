@@ -1,0 +1,21 @@
+<!-- Navigation buttons at the top and bottom of the page. -->
+<div class="nav">
+  {% for item in site.data.navigation %}
+    {% if item.link == page.url %}
+      {% if forloop.first %}
+        <img src="/assets/image/blank.gif" height="22" width="66" alt="blank.gif">
+      {% else %}
+        <a href="{{ prev.link }}"><img src="/assets/image/back.gif" height="22" width="66" alt="Back"></a>
+      {% endif %}
+      {% if forloop.last %}
+        <img src="/assets/image/blank.gif" height="22" width="66" alt="blank.gif">
+      {% else %}
+        {% assign next = site.data.navigation[forloop.index] %}
+        <a href="{{ next.link }}"><img src="/assets/image/next.gif" height="22" width="66" alt="Next"></a>
+      {% endif %}
+    {% endif %}
+    {% assign prev = item %}
+  {% endfor %}
+  <a href="/"><img src="/assets/image/top.gif" height="22" width="66" alt="Home"></a>
+  <img src="/assets/image/blank.gif" height="22" width="66" alt="blank.gif">
+</div>

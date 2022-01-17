@@ -1,0 +1,38 @@
+- name: Home
+  link: /
+
+- name: Contacts
+  link: /contacts
+
+- name: Mailing List
+  link: /mailing-list
+
+- name: Meeting
+  link: /meetings
+
+- name: Calendar
+  link: /calendar
+
+- name: Locations
+  link: /locations
+
+- name: Local Links
+  link: /sb-links
+
+- name: Juggling Links
+  link: /juggle-links
+
+- name: Festival Overview
+  link: /festival
+
+- name: The Next Festival
+  link: /next-festival
+
+- name: Festival Housing
+  link: /housing
+
+- name: Maps
+  link: /maps
+
+- name: Photos
+  link: /photos
